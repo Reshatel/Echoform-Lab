@@ -1,6 +1,6 @@
 .contact-block {
   position: relative;
-  background: #fff url('blacktop.jpg') center/cover no-repeat;
+  background: #fff url('/blacktop.jpg') center/cover no-repeat;
   color: #111;
   padding: 9rem 2rem;
   overflow: hidden;

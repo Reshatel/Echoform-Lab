@@ -23,7 +23,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('blacktop.png');
+  background-image: url('/blacktop.png');
   background-size: cover;
   /* object-fit: cover;  */
   /* background-position: center; */
@@ -202,6 +202,6 @@
 @media (max-width: 768px) {
   .info-background {
     background-position: 50% 80%;
-    background-image: url('blacktopmobile.png');
+    background-image: url('/blacktopmobile.png');
   }
 }
