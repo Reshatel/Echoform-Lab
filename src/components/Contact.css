@@ -1,0 +1,87 @@
+.contact-block {
+  position: relative;
+  background: #fff url('blacktop.jpg') center/cover no-repeat;
+  color: #111;
+  padding: 9rem 2rem;
+  overflow: hidden;
+}
+
+.contact-content {
+  max-width: 700px;
+  margin: 0 auto;
+  z-index: -1;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+}
+
+.contact-block .section-title.light {
+  color: #111;
+}
+
+.section-text.dark {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.light-btn {
+  color: #111;
+  border-color: #111;
+}
+.light-btn:hover {
+  background: #111;
+  color: #fff;
+  border-color: #000;
+}
+
+.social-icons.bright {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icons.bright a {
+  font-size: 1.8rem;
+  color: #111;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icons.bright a:hover {
+  color: #555;
+  transform: scale(1.2);
+}
+
+.small-note {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons.bright a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons.bright a[aria-label="LinkedIn"]:hover { color: #0077b5; }
+.social-icons.bright a[aria-label="GitHub"]:hover { color: #333; }
+.social-icons.bright a[aria-label="Instagram"]:hover { color: #e1306c; }
+.social-icons.bright a[aria-label="Twitter"]:hover { color: #1da1f2; }
+.social-icons.bright a[aria-label="YouTube"]:hover { color: #ff0000; }
+.social-icons.bright a[aria-label="Telegram"]:hover { color: #0088cc; }
+.social-icons.bright a[aria-label="Behance"]:hover { color: #1769ff; }
+.social-icons.bright a[aria-label="Dribbble"]:hover { color: #ea4c89; }
+
+
+@media (max-width: 768px) {
+  .contact-content {
+    padding: 2rem 1rem;
+  }
+}
+
+.section-title::after {
+
+  display: none;
+}

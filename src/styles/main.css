@@ -1,0 +1,437 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #111;
+  color: #eee;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+header, footer {
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  color: #111;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #111;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #444;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.998);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.933);
+  border-radius: 1px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  color-scheme: light dark;
+  color: #111;
+}
+
+.hero-content {
+  transform: translateY(-70px);
+}
+
+.hero-hand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  z-index: 0;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+
+}
+
+footer {
+  text-align: center;
+  background: #111111;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2;
+}
+}
+
+/* Анімації */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+.hero {
+  opacity: 1;
+  transform: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+/* 1. CSS-змінні та базові налаштування */
+:root {
+  --bg: #111;
+  --bg-secondary: #1a1a1a;
+  --text: #eee;
+  --accent: #444;
+  --accent-hover: #666;
+  --transition: 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* 2. Контейнер для секцій */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+/* 3. Заголовки секцій */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+}
+
+/* 4. Текстові блоки */
+.section-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+/* 5. Кнопки */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--accent);
+  color: var(--text);
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background var(--transition), border-color var(--transition);
+}
+.btn:hover {
+  background: var(--accent);
+  border-color: var(--accent-hover);
+  cursor: pointer;
+}
+
+/* 6. Анімація появи */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s var(--delay, 0s) ease-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-light {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Головний скролбар */
+body::-webkit-scrollbar {
+  width: 6px; /* тонкий */
+  height: 6px; /* для горизонтального */
+}
+
+/* Трек (фон) */
+body::-webkit-scrollbar-track {
+  background: transparent; /* або rgba(0,0,0,0.05) */
+}
+
+/* Повзунок */
+body::-webkit-scrollbar-thumb {
+  background-color: #444; /* темно-сірий */
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+/* Ховер-ефект */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
+.about-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+
+.glow-btn {
+  animation: glow 1.5s infinite alternate;
+}
+
+
+.social-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: var(--accent);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent-hover);
+  transform: scale(1.2);
+}
+
+.hero-title {
+  display: inline-block;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUpLetter 0.5s forwards;
+}
+
+@keyframes fadeInUpLetter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.typing::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typing {
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-media {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.media-frame {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.06);
+}
+
+.media-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(100%) contrast(1.2);
+  transition: filter 0.5s ease;
+}
+.media-img:hover {
+  filter: grayscale(20%) contrast(1.1);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInReveal 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.reveal:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.media-gif {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  /* box-shadow: 0 0 40px rgba(255, 255, 255, 0.06); */
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.2);
+  transition: filter 0.5s ease;
+}
+.media-gif:hover {
+  filter: grayscale(20%) contrast(1.1);
+}
+
+
+.glow-btn {
+  /* box-shadow: 0 0 15px var(--accent); */
+  transition: box-shadow 0.4s ease, background 0.4s ease;
+}
+.glow-btn:hover {
+  background: var(--accent);
+  /* box-shadow: 0 0 25px var(--accent-hover); */
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  .about-media {
+    order: -1;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease var(--delay), transform 0.6s ease var(--delay);
+}
+
+.about-section {
+  opacity: 0;
+  transform: translateY(20px);
+}

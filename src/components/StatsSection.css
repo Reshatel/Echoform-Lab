@@ -1,0 +1,91 @@
+.stats-section {
+  position: relative;
+  /* background-image: url('/1cb7ac57-3aaa-4e99-8b24-791f798f2430.png'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  /* padding: -1rem 1rem; */
+  overflow: hidden;
+}
+
+.stats-overlay {
+  background-color:#111;
+  padding: 4rem 2rem;
+  transform: translateY(-140px);
+}
+
+.stats-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stats-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.stats-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: #ccc;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 12px;
+}
+
+.skill-fill {
+  background: linear-gradient(90deg, #4c4c4c, #fff);
+  height: 100%;
+  transition: width 1s ease;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-item {
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.stat-label {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+/* .text-container{
+  transform: translateY(-80px);
+} */

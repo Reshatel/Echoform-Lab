@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "details": "Details",
+    "stats": "Stats",
+    "contact": "Contact",
+    "testimonials": "Testimonials",
+    "footer": "Footer"
+  },
+  "about": {
+    "title": "About Us",
+    "paragraph1": "We’re a creative studio crafting digital experiences that inspire and resonate. Blending minimalism with bold ideas, we believe clarity is the new luxury.",
+    "paragraph2": "From concept to code — we bring vision to life. Launching a brand or refreshing one? We’re your partner in monochrome aesthetics.",
+    "button": "View Details"
+  },
+  "contact": {
+    "title": "Let’s Connect",
+    "paragraph": "Got a bold idea or just want to vibe with us? Drop us a line — we love curious minds and daring visions.",
+    "button": "Start the Conversation",
+    "note": "Or connect with us on your favorite platform:"
+  },
+  "footer": {
+    "tagline": "Design-driven. Code-focused. Always in style.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "email": "hello@monochrome.dev",
+    "phone": "+38012345678",
+    "follow": "Follow Us",
+    "copyright": "© 2025 Echoform Lab. All rights reserved.",
+    "credit": "Crafted with clarity and boldness by the Echoform Lab team."
+  },
+  "hero": {
+    "description": "A minimalist, modern experience. Crafted with precision and elegance."
+  },
+  "info": {
+    "title": "Details",
+    "paragraph": "Bold ideas deserve bold execution. This block invites you to explore how we turn vision into impact — one concept at a time.",
+    "accordion": {
+      "idea": {
+        "label": "Idea as Form",
+        "text": "We transform abstract concepts into visual solutions, where form is a language."
+      },
+      "motion": {
+        "label": "Experience in Motion",
+        "text": "Interactivity, animation, response — we create experiences that live with the user."
+      },
+      "contrast": {
+        "label": "Contrast as Strategy",
+        "text": "Minimalism and clarity — it's not just a style, it's a way of thinking."
+      },
+      "responsive": {
+        "label": "Responsive Design",
+        "text": "We create solutions that work on any device without losing aesthetics."
+      },
+      "speed": {
+        "label": "Speed as Advantage",
+        "text": "Our products load instantly, because time is value."
+      },
+      "future": {
+        "label": "The Future Is Now",
+        "text": "We push boundaries: new formats, new colors, new ideas."
+      }
+    },
+    "cta": {
+      "title": "Ready to create something unique together?",
+      "text": "We’re open to new ideas, partnerships, and challenges. Write to us — and we’ll respond instantly.",
+      "button": "Contact Us"
+    }
+  },
+  "stats": {
+    "title": "What we can do",
+    "subtitle": "A little bit of facts, figures and confidence.",
+    "skills": {
+      "uiux": "UI/UX Design",
+      "frontend": "Frontend",
+      "animations": "Animations"
+    },
+    "metrics": {
+      "hours": "Development hours",
+      "concepts": "Unique concepts",
+      "tech": "Technologies"
+    }
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "items": [
+      {
+        "name": "Anna Kovalenko",
+        "role": "Product Designer, NovaTech",
+        "quote": "Echoform Lab helped us rethink our entire brand. Their minimalist approach brought clarity and elegance.",
+        "avatar": "https://randomuser.me/api/portraits/women/44.jpg"
+      },
+      {
+        "name": "Dmytro Bondarenko",
+        "role": "Frontend Lead, PixelForge",
+        "quote": "They nailed the balance between aesthetics and usability. Our users noticed the difference immediately.",
+        "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      {
+        "name": "Olena Hrytsenko",
+        "role": "Marketing Director, BrightEdge",
+        "quote": "Working with them felt effortless. Every detail was intentional and beautifully executed.",
+        "avatar": "https://randomuser.me/api/portraits/women/65.jpg"
+      }
+    ]
+  
+}
+
+}

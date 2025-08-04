@@ -1,0 +1,207 @@
+.info-section {
+  position: relative;
+  background-color: #fff;
+  color: #111;
+  padding-top: 10rem;
+  /* margin-bottom: 20px; */
+  overflow: hidden;
+}
+
+.section-title-det{
+  color: black;
+}
+
+.section-title-det {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.info-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('blacktop.png');
+  background-size: cover;
+  /* object-fit: cover;  */
+  /* background-position: center; */
+  opacity: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+.info-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.accordion {
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.accordion-toggle {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.accordion-toggle:hover {
+  background-color: #f4f4f4;
+}
+
+.accordion-toggle .arrow {
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+.accordion-item.active .arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1rem;
+}
+
+.accordion-item.active .accordion-content {
+  padding: 1rem;
+}
+
+.horizontal-accordion {
+  display: flex;
+  position: relative;
+  margin-top: 2rem;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  height: 320px;
+  width: 100%;
+}
+
+.accordion-panel {
+  flex: 1;
+  position: relative;
+  transition: flex 0.5s ease;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  min-width: 10px; /* запобігає стисненню заголовка */
+}
+
+.accordion-panel:hover {
+  flex: 4;
+}
+
+.accordion-panel:hover ~ .accordion-panel {
+  flex: 1 !important;
+}
+
+.panel-label {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.75rem 1rem;
+  pointer-events: none;
+  z-index: 2;
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+  overflow: hidden;
+}
+
+.panel-content {
+  opacity: 0;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+  max-width: 320px;
+  padding: 1rem;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.accordion-panel:hover .panel-content {
+  opacity: 1;
+}
+
+.cta-block {
+  /* margin-top: 20rem; */
+  margin-bottom: 40%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.cta-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.cta-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--accent);
+  color: black;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.cta-button:hover {
+  background: black;
+  color: white;
+  border-color: var(--accent-hover);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .info-background {
+    background-position: 50% 80%;
+    background-image: url('blacktopmobile.png');
+  }
+}
